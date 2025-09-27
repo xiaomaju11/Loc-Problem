@@ -1,0 +1,8 @@
+{
+    "instancesPaths":"../../data/expeCAID1/set7/",
+    "resolutionMethods": ["aeSolveMTZ", "aeSolveQuadMTZ", "aeSolveQuadMTZAddMaxCliques", "aeSolveQuadMTZCI", "aeSolveQuadMTZMCCI", "aeSolveQuadMF", "aeSolveQuadMFAddMaxCliques", "aeSolveQuadMFCI", "aeSolveQuadMFCIMC"],
+    "latexFormatPath":  "./config/2023-01-17_table_Quad_CP_menetou.json",
+    "latexOutputFile": "./2023-01-18_resultsQuad_CP_menetou/resultsQuad4_madiran.tex",
+    "outputPath": "./2023-01-18_resultsQuad_CP_menetou/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [2, 3, 5, 10]}
+}

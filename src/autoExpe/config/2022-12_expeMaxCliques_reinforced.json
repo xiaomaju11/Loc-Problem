@@ -1,0 +1,8 @@
+{
+    "instancesPaths":["../../data/expeCAID1/set7/", "../../data/gap_eleve/"],
+    "resolutionMethods": ["aeSolveMTZC2", "aeSolveMTZ", "aeSolveMTZMaxCliques", "aeSolveMF3hh", "aeSolveMF3hhMC"],
+    "latexFormatPath":  ["./config/tableMaxSSCliques.json"],
+    "latexOutputFile": "./2022-12-9_resultsMaxCliques_moulisReinforced/resultsMaxCliquesReinforced.tex",
+    "outputPath": "./2022-12-9_resultsMaxCliques_moulisReinforced/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [2, 5, 10]}
+}

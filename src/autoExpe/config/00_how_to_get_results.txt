@@ -1,0 +1,5 @@
+scp ales@moulis:/home/uma/ales/git/locHAPS/src/autoExpe/resultsMaxCliques_moulis/results* ./
+okular resultsMaxCliques.pdf
+
+
+okular resultsMaxCliques.pdf

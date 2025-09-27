@@ -1,0 +1,10 @@
+[
+    {"caption": "Drone results", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"columnParameters": "objective", "digits": 0, "displayedName": "Opt", "method": "aeSolveMTZ", "vline": false}, 
+    {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "Borne rac.", "method": "aeSolveMTZ", "vline": false}, 
+    {"columnParameters": "nodeCount", "digits": 0, "displayedName": "Noeuds", "method": "aeSolveMTZ", "vline": false}, 
+    {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "Gap", "vline": false, "digits": 1},
+    {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "Temps (s)", "method": "aeSolveMTZ", "vline": false}
+]

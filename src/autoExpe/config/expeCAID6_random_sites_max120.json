@@ -1,0 +1,8 @@
+{
+    "instancesPaths":["../../data/expeCAID1/set7/n100_gridLength600_rCom1500_randomized.txt", "../../data/expeCAID1/set7/n100_gridLength600_rCom1500.txt"],
+    "resolutionMethods": ["aeSolveMTZ", "aeSolveCB", "aeSolveCBIF"],
+    "latexFormatPath":  "./config/tableCAID6.json",
+    "latexOutputFile": "./resultsCAID4_max120/resultsCAID6_random_positions_max120.tex",
+    "outputPath": "./resultsCAID4_max120/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [10]}
+}

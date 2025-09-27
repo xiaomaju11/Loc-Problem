@@ -1,0 +1,58 @@
+[
+    {"caption": "Drone results", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadMTZ)", "method": "aeSolveQuadMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadMTZ-MC)", "method": "aeSolveQuadMTZAddMaxCliques", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadMTZ-CI)", "method": "aeSolveQuadMTZCI", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadMTZ-MC-CI)", "method": "aeSolveQuadMTZMCCI", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadMF)", "method": "aeSolveQuadMF", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadMF-MC)", "method": "aeSolveQuadMFAddMaxCliques", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadMF-CI)", "method": "aeSolveQuadMFCI", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadMF-MC-CI)", "method": "aeSolveQuadMFCIMC", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadMTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadMTZAddMaxCliques", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadMTZ-MC)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadMTZAddCI", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadMTZ-CI)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadMTZMCCI", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadMTZ-MC-CI)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadMF", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadMF)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadMFAddMaxCliques", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadMF-MC)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadMFCI", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadMF-CI)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadMFCIMC", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadMF-MC-CI)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuadMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-MC)", "method": "aeSolveQuadMTZAddMaxCliques", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-CI)", "method": "aeSolveQuadMTZCI", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-MCCI)", "method": "aeSolveQuadMTZMCCI", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(QuadMF)", "method": "aeSolveQuadMF", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(QuadMF-MF)", "method": "aeSolveQuadMFAddMaxCliques", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(QuadMF-CI)", "method": "aeSolveQuadMFCI", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(QuadMF-MC-CI)", "method": "aeSolveQuadMFCIMCnn", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Root relaxation", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuadMTZ", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(Quad-MC)", "method": "aeSolveQuadMTZAddMaxCliques", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(Quad-CI)", "method": "aeSolveQuadMTZCI", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(Quad-MCCI)", "method": "aeSolveQuadMTZMCCI", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(QuadMF)", "method": "aeSolveQuadMF", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(QuadMF-MC)", "method": "aeSolveQuadMTZAddMaxCliques", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(QuadMF-CI)", "method": "aeSolveQuadMTZCI", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(QuadMF-MC-CI)", "method": "aeSolveQuadMTZCIMC", "vline": false}
+     ]
+    }
+]

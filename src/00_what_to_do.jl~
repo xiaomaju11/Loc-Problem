@@ -1,0 +1,30 @@
+# Example of commands to solve a problem with a formulation
+
+include("autoExpe/autoExpe.jl")
+
+instancePath = "../data/expeCAID1/set7/n100_gridLength1000_rCom1500.txt"
+
+# Type de formulation considérée
+connexity = "MTZ" # Autres valeurs possibles "None", "MTZ", "MultiFlow", "MultiFlow3h", "MultiFlow3hh", "SubtoursCallback", "RelaxSubtoursThenMTZ", "QuadCliqueCallback", "QuadMTZ", "QuadMTZWS", "MTZC2", "MTZ3", "QuadMF3hh", "Flow", "MultiFlowSourour"
+
+resParam = ResolutionParam(connexity, instancePath, p=2, time_limit=300)
+
+# Autres paramètres fixables
+resParam.displaySolution = false # true pour afficher la valeur des variables non nulles
+resParam.tightenRelaxation = false # ajoute itérativement des inégalités de clique pour couper les relaxations successives à la racine
+resParam.addMaxCliques = false # ajoute des inégalités de clique initialement (avant calcul de la relaxation)
+resParam.preprocessing = false # retire des positions dominées
+resParam.warmStart = true # utilise la solution d'un algorithme glouton en entrée des formulations
+resParam.maxCutsCount = 10 
+resParam.threads = -1 # limite le nombre de threads (-1 si pas de limitation)
+resParam.redundancyRatio = 0.5 # Redondance des sommets dans les inégalités de clique (utilisé uniquement si ou utilise tightenRelaxation)
+resParam.isRelaxation = false
+
+# Résolution exacte
+aeSolve(resParam)
+
+# Résolution gloutonne
+aeSolveGreedy(resParam, isDeterministic = false) # Basé sur le nombre de clients couverts
+aeSolveGreedyRelax(resParam, isDeterministic = false) # Basé sur la relaxation du problème
+
+texDocument(Instance(resParam.instancePath))

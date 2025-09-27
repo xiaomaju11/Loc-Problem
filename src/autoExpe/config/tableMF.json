@@ -1,0 +1,30 @@
+[
+    {"caption": "Drone results", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MF3hh)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MF3h)", "method": "aeSolveMF3h", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MF3s)", "method": "aeSolveMF3", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMF3hh", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MF3hh)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMF3h", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MF3h)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMF3", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MF3)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MF3hh)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MF3h)", "method": "aeSolveMF3h", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MF3)", "method": "aeSolveMF3", "vline": false}
+     ]
+    }
+]

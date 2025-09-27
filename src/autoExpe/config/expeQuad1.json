@@ -1,0 +1,8 @@
+{
+    "instancesPaths":"../../data/expeCAID1/set7/",
+    "resolutionMethods": ["aeSolveMTZ", "aeSolveQuadWS", "aeSolveQuad"],
+    "latexFormatPath":  "./config/tableQuad1.json",
+    "latexOutputFile": "./resultsQuad1_meursault/resultsQuad1_meursault.tex",
+    "outputPath": "./resultsQuad1_meursault/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [5, 10]}
+}

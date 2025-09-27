@@ -1,0 +1,90 @@
+[
+    {"caption": "Drone results", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadCB)", "method": "aeSolveQuadCB", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad-R0)", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad-R0.25)", "method": "aeSolveQuadTightenRelax025", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad-R0.5)", "method": "aeSolveQuadTightenRelax05", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad-R0.75)", "method": "aeSolveQuadTightenRelax075", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad-R1)", "method": "aeSolveQuadTightenRelax1", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Final LB", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "lowerBound", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "lowerBound", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "lowerBound", "digits": 0, "displayedName": "(QuadCB)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "lowerBound", "digits": 0, "displayedName": "(Quad-R0)", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "lowerBound", "digits": 0, "displayedName": "(Quad-R025)", "method": "aeSolveQuadTightenRelax025", "vline": false},
+	 {"columnParameters": "lowerBound", "digits": 0, "displayedName": "(Quad-R05)", "method": "aeSolveQuadTightenRelax05", "vline": false},
+	 {"columnParameters": "lowerBound", "digits": 0, "displayedName": "(Quad-R075)", "method": "aeSolveQuadTightenRelax075", "vline": false},
+	 {"columnParameters": "lowerBound", "digits": 0, "displayedName": "(Quad-R1)", "method": "aeSolveQuadTightenRelax1", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuad", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadCB", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadCB)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadTightenRelax", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad-R0)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadTightenRelax025", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad-R025)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadTightenRelax05", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad-R05)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadTightenRelax075", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad-R075)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadTightenRelax1", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad-R1)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(QuadCB)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-R0)", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-R025)", "method": "aeSolveQuadTightenRelax025", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-R05)", "method": "aeSolveQuadTightenRelax05", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-R075)", "method": "aeSolveQuadTightenRelax075", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-R1)", "method": "aeSolveQuadTightenRelax1", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Tightening time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "tighteningTime", "digits": 0, "displayedName": "(Quad-R0)", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "tighteningTime", "digits": 0, "displayedName": "(Quad-R025)", "method": "aeSolveQuadTightenRelax025", "vline": false},
+	 {"columnParameters": "tighteningTime", "digits": 0, "displayedName": "(Quad-R05)", "method": "aeSolveQuadTightenRelax05", "vline": false},
+	 {"columnParameters": "tighteningTime", "digits": 0, "displayedName": "(Quad-R075)", "method": "aeSolveQuadTightenRelax075", "vline": false},
+	 {"columnParameters": "tighteningTime", "digits": 0, "displayedName": "(Quad-R1)", "method": "aeSolveQuadTightenRelax1", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Initial bound", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "initialBound", "digits": 0, "displayedName": "(Quad-R0)", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "initialBound", "digits": 0, "displayedName": "(Quad-R025)", "method": "aeSolveQuadTightenRelax025", "vline": false},
+	 {"columnParameters": "initialBound", "digits": 0, "displayedName": "(Quad-R05)", "method": "aeSolveQuadTightenRelax05", "vline": false},
+	 {"columnParameters": "initialBound", "digits": 0, "displayedName": "(Quad-R075)", "method": "aeSolveQuadTightenRelax075", "vline": false},
+	 {"columnParameters": "initialBound", "digits": 0, "displayedName": "(Quad-R1)", "method": "aeSolveQuadTightenRelax1", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Tightened bound", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "tightenedBound", "digits": 0, "displayedName": "(Quad-R0)", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "tightenedBound", "digits": 0, "displayedName": "(Quad-R025)", "method": "aeSolveQuadTightenRelax025", "vline": false},
+	 {"columnParameters": "tightenedBound", "digits": 0, "displayedName": "(Quad-R05)", "method": "aeSolveQuadTightenRelax05", "vline": false},
+	 {"columnParameters": "tightenedBound", "digits": 0, "displayedName": "(Quad-R075)", "method": "aeSolveQuadTightenRelax075", "vline": false},
+	 {"columnParameters": "tightenedBound", "digits": 0, "displayedName": "(Quad-R1)", "method": "aeSolveQuadTightenRelax1", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Inequalities count", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "inequalitiesCount", "digits": 0, "displayedName": "(Quad-R0)", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "inequalitiesCount", "digits": 0, "displayedName": "(Quad-R025)", "method": "aeSolveQuadTightenRelax025", "vline": false},
+	 {"columnParameters": "inequalitiesCount", "digits": 0, "displayedName": "(Quad-R05)", "method": "aeSolveQuadTightenRelax05", "vline": false},
+	 {"columnParameters": "inequalitiesCount", "digits": 0, "displayedName": "(Quad-R075)", "method": "aeSolveQuadTightenRelax075", "vline": false},
+	 {"columnParameters": "inequalitiesCount", "digits": 0, "displayedName": "(Quad-R1)", "method": "aeSolveQuadTightenRelax1", "vline": false}
+     ]
+    }
+]

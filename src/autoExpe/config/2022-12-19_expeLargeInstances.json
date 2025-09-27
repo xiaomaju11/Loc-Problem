@@ -1,0 +1,8 @@
+{
+    "instancesPaths":["../../data/2022-12-large_instances/"],
+    "resolutionMethods": ["aeSolveMTZC2", "aeSolveMTZ"],
+    "latexFormatPath":  ["./config/tableLargeInstances.json"],
+    "latexOutputFile": "./2022-12-19_results_large_instances_moulis/resultsLargeInstances.tex",
+    "outputPath": "./2022-12-19_results_large_instances_moulis/res/",
+    "parametersToCombine": {"time_limit": 3600, "p": [2, 5, 10, 15]}
+}

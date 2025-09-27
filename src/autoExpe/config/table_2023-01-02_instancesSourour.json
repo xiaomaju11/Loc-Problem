@@ -1,0 +1,50 @@
+[
+    {"caption": "Résultats sur les instances de Sourour", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ-CP)", "method": "aeSolveMTZCPICmax50_itmax30", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MF)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MF-CP)", "method": "aeSolveMF3hhCPIC", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMTZCPICmax50_itmax30", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ-CP)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMF3hh", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MF)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMF3hhCPIC", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MF-CP)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ-CP)", "method": "aeSolveMTZCPICmax300_itmax10", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MF)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MF-CP)", "method": "aeSolveMF3hhCPIC", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Relaxation", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "rrAfterCP", "digits": 0, "displayedName": "(MTZ-CP)", "method": "aeSolveMTZCPICmax300_itmax10", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MF)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "rrAfterCP", "digits": 0, "displayedName": "(MF-CP)", "method": "aeSolveMF3hhCPIC", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Cutting plane time", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "cpTime", "digits": 0, "displayedName": "(MTZ-CP)", "method": "aeSolveMTZCPICmax300_itmax10", "vline": false},
+	 {"columnParameters": "cpTime", "digits": 0, "displayedName": "(MF-CP)", "method": "aeSolveMF3hhCPIC", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Cut added", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "cpCutsAdded", "digits": 0, "displayedName": "(MTZ-CP)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "cpCutsAdded", "digits": 0, "displayedName": "(MF-CP)", "method": "aeSolveMF3hhCPIC", "vline": false}
+     ]
+    }
+]

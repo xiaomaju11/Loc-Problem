@@ -1,0 +1,51 @@
+[
+    {"caption": "Résultats des différentes formulations sur les instances de Sourour. MTZ: notre MTZ, MTZ-2: MTZ d'Ivana (racine et variable $c_{u,h}$), MTZ-3: MTZ Sourour (racine et variables $c_u$), MF-Z: multiflot de Zacharie indicé sur les HAPS", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ2)", "method": "aeSolveMTZC2", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ3)", "method": "aeSolveMTZ3", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MF-Z2)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(F-S)", "method": "aeSolveFlow", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMTZC2", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ2)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMTZ3", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ3)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMF3hh", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MF-Z2)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveFlow", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(F-S)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ2)", "method": "aeSolveMTZC2", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ3)", "method": "aeSolveMTZ3", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MF-Z2)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(F-S)", "method": "aeSolveFlow", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Relaxation", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MTZ2)", "method": "aeSolveMTZC2", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MTZ3)", "method": "aeSolveMTZ3", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MF-Z2)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(F-S)", "method": "aeSolveFlow", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Node count", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "nodeCount", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "nodeCount", "digits": 0, "displayedName": "(MTZ2)", "method": "aeSolveMTZC2", "vline": false},
+	 {"columnParameters": "nodeCount", "digits": 0, "displayedName": "(MTZ3)", "method": "aeSolveMTZ3", "vline": false},
+	 {"columnParameters": "nodeCount", "digits": 0, "displayedName": "(MF-Z2)", "method": "aeSolveMF3hh", "vline": false},
+	 {"columnParameters": "nodeCount", "digits": 0, "displayedName": "(F-S)", "method": "aeSolveFlow", "vline": false}
+     ]
+    }
+]

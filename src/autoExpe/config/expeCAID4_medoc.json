@@ -1,0 +1,8 @@
+{
+    "instancesPaths":"../../data/expeCAID1/set5/",
+    "resolutionMethods": ["aeSolveMTZ", "aeSolveGreedy", "aeSolveGreedyRelax", "aeSolveGreedyDeterministic", "aeSolveGreedyRelaxDeterministic"],
+    "latexFormatPath":  "./config/tableCAID4.json",
+    "latexOutputFile": "./resultsCAID4_medoc/resultsCAID4_medoc.tex",
+    "outputPath": "./resultsCAID4_medoc/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [10]}
+}

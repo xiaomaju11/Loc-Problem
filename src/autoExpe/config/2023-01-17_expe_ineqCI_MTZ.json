@@ -1,0 +1,8 @@
+{
+    "instancesPaths":["../../data/expeCAID1/set7/", "../../data/gap_eleve/"],
+    "resolutionMethods": ["aeSolveMTZCPICmax50_itmax10", "aeSolveMTZCPICmax50_itmax30", "aeSolveMTZCPICmax100_itmax10", "aeSolveMTZCPICmax300_itmax10", "aeSolveMTZ"],
+    "latexFormatPath":  ["./config/2023-01-17_table_CIIneq.json"],
+    "latexOutputFile": "./2023-01-17_resultsCIIneqMTZ_maranges/resultsCIIneqMTZ.tex",
+    "outputPath": "./2023-01-17_resultsCIIneqMTZ_maranges/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [2, 3, 5]}
+}

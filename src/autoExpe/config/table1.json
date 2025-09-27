@@ -1,0 +1,34 @@
+[
+    {"caption": "Drone results", "expandInstances": false, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "MTZ", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "Subtours", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "Greedy client", "method": "aeSolveGreedy", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "Greedy relax", "method": "aeSolveGreedyRelax", "vline": false}
+     ]
+    },
+    
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "MTZ", "vline": false, "suffix": "\\%", "digits": 0},
+	 {"function": "gap", "method": "aeSolveCB", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "Subtours", "vline": false, "suffix": "\\%", "digits": 0}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "MTZ", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "Subtours", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "Greedy client", "method": "aeSolveGreedy", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "Greedy relax", "method": "aeSolveGreedyRelax", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Time to best (s)", "vlineAfter": false, "columns":
+     [
+	 {"columnParameters": "resolutionTimeToBest", "digits": 0, "displayedName": "Greedy client", "method": "aeSolveGreedy", "vline": false},
+	 {"columnParameters": "resolutionTimeToBest", "digits": 0, "displayedName": "Greedy relax", "method": "aeSolveGreedyRelax", "vline": false}
+     ]
+    }
+]

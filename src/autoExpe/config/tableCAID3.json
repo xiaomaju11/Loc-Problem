@@ -1,0 +1,47 @@
+[
+    {"caption": "Drone results", "expandInstances": false, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(R-MTZ)", "method": "aeSolveRootCBThenMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(ST)", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(STFull)", "method": "aeSolveCBIF", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "$A^s_{U}$", "method": "aeSolveGreedy", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "$A^s_{PL}$", "method": "aeSolveGreedyRelax", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "$A_{U}$", "method": "aeSolveGreedyDeterministic", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "$A_{PL}$", "method": "aeSolveGreedyRelaxDeterministic", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveRootCBThenMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(R-MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveCB", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(ST)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveCBIF", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(STFull)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(R-MTZ)", "method": "aeSolveRootCBThenMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(ST)", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(STFull)", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "$A^s_{U}$", "method": "aeSolveGreedy", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "$A^s_{PL}$", "method": "aeSolveGreedyRelax", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "$A_{U}$", "method": "aeSolveGreedyDeterministic", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "$A_{PL}$", "method": "aeSolveGreedyRelaxDeterministic", "vline": false}
+     ]
+    },
+        {"columnGroupName": "(R-MTZ) cut generation", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "rootSTSeparationTime", "digits": 1, "displayedName": "Time (s)", "method": "aeSolveRootCBThenMTZ", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 1, "displayedName": "Root Relax.", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "rootRelaxationAfterST", "digits": 1, "displayedName": "Relax after cuts", "method": "aeSolveRootCBThenMTZ", "vline": false},
+	 {"columnParameters": "stCutsRootCount", "digits": 0, "displayedName": "Cuts count", "method": "aeSolveRootCBThenMTZ", "vline": false}
+     ]
+    } 
+
+]

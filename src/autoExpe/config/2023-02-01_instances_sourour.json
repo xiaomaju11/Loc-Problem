@@ -1,0 +1,8 @@
+{
+    "instancesPaths":["../../data/sourour"],
+    "resolutionMethods": ["aeSolveMTZ", "aeSolveMF3hh", "aeSolveMTZCPICmax50_itmax30", "aeSolveMF3hhCPIC"],
+    "latexFormatPath":  ["./config/table_2023-01-02_instancesSourour.json"],
+    "latexOutputFile": "./2023-02-01_local_instances_sourour_local/results.tex",
+    "outputPath": "./2023-02-01_local_instances_sourour_local/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [10]}
+}

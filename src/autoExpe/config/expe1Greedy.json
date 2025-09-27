@@ -1,0 +1,7 @@
+{
+    "instancesPaths":"../../data/expe1",
+    "resolutionMethods": ["aeSolveGreedy", "aeSolveGreedyRelax"],
+    "latexFormatPath":  "./config/table1Greedy.json",
+    "latexOutputFile": "./results/result_tables.tex",
+    "parametersToCombine": {"time_limit": 30}
+}

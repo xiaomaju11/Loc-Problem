@@ -1,0 +1,9 @@
+{
+    "instancesPaths":["../../data/expeCAID1/set7/"],
+    "resolutionMethods": ["aeSolveMTZ3", "aeSolveMTZ", "aeSolveMTZC2", "aeSolveFlow", "aeSolveMF3hh"],
+    "latexFormatPath":  ["./config/table_2023-03-19_comparaison_formulations_Sourour.json"],
+    "latexOutputFile": "./2023-02-01_morey_formulation_sourour_local/resultsFormulations.tex",
+    "outputPath": "./2023-02-01_morey_formulation_sourour_local/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [5, 10, 15]},
+    "recomputeSavedResults": false
+}

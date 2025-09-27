@@ -1,0 +1,37 @@
+[
+    {"caption": "Drone results", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZPP)", "method": "aeSolveMTZPP", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(ST)", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(STPP)", "method": "aeSolveCBPP", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMTZPP", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZPP)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveCB", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(ST)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveCBPP", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(STPP)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZPP)", "method": "aeSolveMTZPP", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(ST)", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(STPP)", "method": "aeSolveCBPP", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Preprocessing (PP)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "dominated", "digits": 0, "displayedName": "Dominations", "method": "aeSolveMTZPP", "vline": false},
+	 {"columnParameters": "comPriorities", "digits": 0, "displayedName": "Com priorities", "method": "aeSolveMTZPP", "vline": false},
+	 {"columnParameters": "priorities", "digits": 0, "displayedName": "Priorities", "method": "aeSolveMTZPP", "vline": false}
+     ]
+    }
+]

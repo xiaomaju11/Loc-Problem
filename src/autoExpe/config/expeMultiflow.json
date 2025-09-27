@@ -1,0 +1,9 @@
+{
+    "instancesPaths":"../../data/expeCAID1/set7/",
+    "resolutionMethods": ["aeSolveMF3hh"],
+    "latexFormatPath":  "./config/tableMF.json",
+    "latexOutputFile": "./resultsMF_meursault/resultsMF_meursault.tex",
+    "outputPath": "./resultsMF_meursault/res/",
+    "recomputeSavedResults": true,
+    "parametersToCombine": {"time_limit": 1800, "p": [2, 5, 10]}
+}

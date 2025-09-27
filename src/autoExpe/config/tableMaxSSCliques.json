@@ -1,0 +1,34 @@
+[
+    {"caption": "Formulations with reinforcement. MF = multiflots, MC = max cliques, MTZ-2: MTZ with a root and an additional site index on unit covering variables.", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ-2)", "method": "aeSolveMTZC2", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MF)", "method": "aeSolveMF3hh", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMTZC2", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ-2)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMF3hh", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MF)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Root relaxation", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MTZ-2)", "method": "aeSolveMTZC2", "vline": false},
+	 {"columnParameters": "rootRelaxation", "digits": 0, "displayedName": "(MF)", "method": "aeSolveMF3hh", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ-2)", "method": "aeSolveMTZC2", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MF)", "method": "aeSolveMF3hh", "vline": false}
+     ]
+    }
+]

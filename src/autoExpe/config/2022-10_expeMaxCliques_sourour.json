@@ -1,0 +1,8 @@
+{
+    "instancesPaths":["../../data/gap_eleve/"],
+    "resolutionMethods": ["aeSolveMTZC2", "aeSolveMTZ", "aeSolveMTZMaxCliques", "aeSolveMF3hh", "aeSolveMF3hhMC"],
+    "latexFormatPath":  ["./config/tableMaxCliques.json"],
+    "latexOutputFile": "./resultsMaxCliques_moulis/resultsMaxCliquesSourour.tex",
+    "outputPath": "./resultsMaxCliques_moulis/res2/",
+    "parametersToCombine": {"time_limit": 1800, "p": [2, 3, 5, 10]}
+}

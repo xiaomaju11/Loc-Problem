@@ -1,0 +1,27 @@
+[
+    {"caption": "Drone results", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(QuadWS)", "method": "aeSolveQuadWS", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuad", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadWS", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(QuadWS)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(QuadWS)", "method": "aeSolveQuadWS", "vline": false}
+     ]
+    }
+]

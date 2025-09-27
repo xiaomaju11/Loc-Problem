@@ -1,0 +1,33 @@
+[
+    {"caption": "Drone results", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ-1T)", "method": "aeSolveMTZ1Thread", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(ST)", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(R-ST)", "method": "aeSolveRootCBThenMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(ST-UserCut)", "method": "aeSolveCBIF", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMTZ1Thread", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ-1T)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveCB", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(ST)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveRootCBThenMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(R-ST)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveCBIF", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(ST-UserCut)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ-1T)", "method": "aeSolveMTZ1Thread", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(ST)", "method": "aeSolveCB", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(R-ST)", "method": "aeSolveRootCBThenMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(ST-UserCut)", "method": "aeSolveCBIF", "vline": false}
+     ]
+    }
+]

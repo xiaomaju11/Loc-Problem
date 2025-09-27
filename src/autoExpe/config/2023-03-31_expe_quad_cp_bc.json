@@ -1,0 +1,9 @@
+{
+    "instancesPaths":"../../data/expeCAID1/set7/n1000_gridLength1000_rCom1500.txt",
+    "resolutionMethods": ["aeSolveQuadBCCP_MFCIMC", "aeSolveQuadBC_MFCIMC", "aeSolveQuadMFCIMC", "aeSolveQuadMF", "aeSolveMTZ"],
+    "latexFormatPath":  "./config/table_2023-03-31_Quad_CP_BC.json",
+    "latexOutputFile": "./2023-03-31_resultsQuad_CPBC_maranges/resultsQuad5_maranges.tex",
+    "outputPath": "./2023-03-31_resultsQuad_CPBC_maranges/res/",
+    "parametersToCombine": {"time_limit": 300, "p": [5]},
+    "recomputeSavedResults": true
+}

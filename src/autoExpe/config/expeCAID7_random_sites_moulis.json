@@ -1,0 +1,8 @@
+{
+    "instancesPaths":"../../data/expeCAID1/set7/",
+    "resolutionMethods": ["aeSolveMTZ", "aeSolveCB", "aeSolveCBIF", "aeSolveRootCBThenMTZ", "aeSolveMTZ1Thread"],
+    "latexFormatPath":  "./config/tableCAID6.json",
+    "latexOutputFile": "./resultsCAID7_max120_moulis/resultsCAID7_random_positions_max120.tex",
+    "outputPath": "./resultsCAID7_max120_moulis/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [5, 10]}
+}

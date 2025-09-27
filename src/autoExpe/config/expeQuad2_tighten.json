@@ -1,0 +1,8 @@
+{
+    "instancesPaths":"../../data/expeCAID1/set7/",
+    "resolutionMethods": ["aeSolveMTZ", "aeSolveMTZTightenRelax", "aeSolveQuad", "aeSolveQuadTightenRelax"],
+    "latexFormatPath":  "./config/tableQuad2_tighten.json",
+    "latexOutputFile": "./resultsQuad2_madiran/resultsQuad2_madiran.tex",
+    "outputPath": "./resultsQuad2_madiran/res/",
+    "parametersToCombine": {"time_limit": 180, "p": [2, 5, 10]}
+}

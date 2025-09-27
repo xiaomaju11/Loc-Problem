@@ -1,0 +1,8 @@
+{
+    "instancesPaths":["../../data/expeCAID1/set7/n100_gridLength600_rCom1500.txt", "../../data/expeCAID1/set7/n1000_gridLength750_rCom1500.txt"],
+    "resolutionMethods": ["aeSolveQuad", "aeSolveQuadCB", "aeSolveQuadTightenRelax", "aeSolveQuadTightenRelax025", "aeSolveQuadTightenRelax05", "aeSolveQuadTightenRelax075", "aeSolveMTZ", "aeSolveQuadTightenRelax1"],
+    "latexFormatPath":  ["./config/tableQuad3_redundancy.json"],
+    "latexOutputFile": "./resultsCAID9_margaux_quad_redundancy/resultsCAID9.tex",
+    "outputPath": "./resultsCAID9_margaux_quad_redundancy/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [5, 10]}
+}

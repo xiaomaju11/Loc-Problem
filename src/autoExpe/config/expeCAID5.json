@@ -1,0 +1,8 @@
+{
+    "instancesPaths":"../../data/expeCAID1/set7/n100_gridLength400_rCom1500.txt",
+    "resolutionMethods": ["aeSolveMTZ"],
+    "latexFormatPath":  "./config/tableCAID5.json",
+    "latexOutputFile": "./resultsCAID4_max120/resultsCAID5_max120.tex",
+    "outputPath": "./resultsCAID4_max120/res/",
+    "parametersToCombine": {"time_limit": 1800, "p": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
+}

@@ -1,0 +1,46 @@
+[
+    {"caption": "Drone results", "expandInstances": true, "leftVline": false, "rightVline": false, "vlineAfterRowParams": false, "hideInstanceExtension": true},
+    {"rowParameterName": "n", "displayedName": "$n$", "hline": true},
+    {"rowParameterName": "m", "displayedName": "$m$", "hline": true},
+    {"rowParameterName": "p", "displayedName": "$p$", "hline": false},
+    {"columnGroupName": "Objective", "isBestValueMinimal": false, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(MTZ-R)", "method": "aeSolveMTZTightenRelax", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "objective", "digits": 0, "displayedName": "(Quad-R)", "method": "aeSolveQuadTightenRelax", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Gap", "isBestValueMinimal": true, "highlightBestValue": true, "vlineAfter": true, "columns":
+     [
+	 {"function": "gap", "method": "aeSolveMTZ", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveMTZTightenRelax", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(MTZ-R)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuad", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad)", "vline": false, "digits": 1},
+	 {"function": "gap", "method": "aeSolveQuadTightenRelax", "columnParameters": [{"name": "objective"}, {"name": "lowerBound"}], "displayedName": "(Quad-R)", "vline": false, "digits": 1}
+     ]
+    },
+    {"columnGroupName": "Time (s)", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ)", "method": "aeSolveMTZ", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(MTZ-R)", "method": "aeSolveMTZTightenRelax", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad)", "method": "aeSolveQuad", "vline": false},
+	 {"columnParameters": "resolutionTime", "digits": 0, "displayedName": "(Quad-R)", "method": "aeSolveQuadTightenRelax", "vline": false}
+     ]
+    },
+    {"columnGroupName": "MTZ-R bound tightening", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "tighteningTime", "digits": 0, "displayedName": "Time (s)", "method": "aeSolveMTZTightenRelax", "vline": false},
+	 {"columnParameters": "initialBound", "digits": 0, "displayedName": "First bound", "method": "aeSolveMTZTightenRelax", "vline": false},
+	 {"columnParameters": "tightenedBound", "digits": 0, "displayedName": "Tightened bound", "method": "aeSolveMTZTightenRelax", "vline": false},
+	 {"columnParameters": "inequalitiesCount", "digits": 0, "displayedName": "Ineq. Count", "method": "aeSolveMTZTightenRelax", "vline": false}
+     ]
+    },
+    {"columnGroupName": "Quad-R bound tightening", "vlineAfter": true, "columns":
+     [
+	 {"columnParameters": "tighteningTime", "digits": 0, "displayedName": "Time (s)", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "initialBound", "digits": 0, "displayedName": "First bound", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "tightenedBound", "digits": 0, "displayedName": "Tightened bound", "method": "aeSolveQuadTightenRelax", "vline": false},
+	 {"columnParameters": "inequalitiesCount", "digits": 0, "displayedName": "Ineq. Count", "method": "aeSolveQuadTightenRelax", "vline": false}
+     ]
+    }
+]
